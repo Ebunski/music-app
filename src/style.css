@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-quicksand bg-[#1E1E1E] text-white;
+}
+input:focus {
+	@apply outline-none;
+}
