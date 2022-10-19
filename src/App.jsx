@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import Nav from './components/Nav';
+import Player from './components/Player';
 
 function App() {
-  // STATES
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768)
+	// STATES
+	const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
-  // Render based on desktop size
+	// Render based on desktop size
 	function windowResize() {
 		window.innerWidth > 768 ? setIsDesktop(true) : setIsDesktop(false);
 	}
@@ -17,15 +18,16 @@ function App() {
 			windowResize();
 		});
 	}, []);
-  //
+	//
 
-  const props = {
+	const props = {
 		isDesktop: isDesktop,
 		setIsDesktop: setIsDesktop,
 	};
 	return (
 		<div className="App">
-			<Nav props= {props} />
+			<Nav props={props} />
+			<Player props={props} />
 		</div>
 	);
 }

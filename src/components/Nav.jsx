@@ -38,7 +38,7 @@ export default function Nav({ props }) {
 				</div>
 			</div>
 			{props.isDesktop ? (
-				<div className="absolute top-[100%] left-0 side-nav- flex flex-col items-center w-20">
+				<div className="absolute top-[100%] left-0 side-nav- flex flex-col gap-10 items-center w-20">
 					<div className="flex flex-col gap-4 bg-[#1A1E1F] py-4 px-2 rounded-[2rem] items-center">
 						<img src="./img/Home.png" alt="Home" />
 						<img src="./img/playlist (1).png" alt="playlist" />
