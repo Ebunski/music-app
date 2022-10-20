@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Nav from './components/Nav';
 import Player from './components/Player';
+import Main from './components/Main';
 
 function App() {
 	// STATES
@@ -28,6 +29,11 @@ function App() {
 		<div className="App">
 			<Nav props={props} />
 			<Player props={props} />
+
+			{/* Page Content */}
+			<div className='md:mt-20 md:ml-20'>
+				<Main />
+			</div>
 		</div>
 	);
 }
