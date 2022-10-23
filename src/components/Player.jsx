@@ -1,9 +1,10 @@
 import React from "react";
 import useGlobalContext from "../contexts/appContext";
-export default function Player() {
+
+export default function Player({ props }) {
   const { isDesktop } = useGlobalContext();
   return (
-    <div className="flex items-center music-player- fixed bottom-0 inset-x-0 h-[8rem] border-t-[1px] border-t-secondary-color bg-white/5 backdrop-blur-sm">
+    <div className="flex items-center music-player- fixed bottom-0 inset-x-0 h-[8rem] border-t-[1px] border-t-secondary-color bg-black/10 backdrop-blur-sm">
       <div className="flex justify-between md:justify-start w-[85%] mx-auto gap-6">
         <div className="flex gap-4 md:w-[20%]">
           <img
