@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "react-feather";
-import useGlobalContext from "../contexts/appContext";
+import useGlobalContext from "../../contexts/appContext";
 
 export default function Nav() {
   const { isDesktop } = useGlobalContext();

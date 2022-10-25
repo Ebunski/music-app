@@ -1,9 +1,12 @@
-import Main from "../components/Main";
+import Hero from "../components/Hero";
+import NewReleases from "../components/NewReleases";
+import YourArea from "../components/YourArea";
 
 export default function Home() {
   return (
-    <div className="md:mt-20 md:ml-20">
-      <Main />
-    </div>
+    <main className="md:mt-20 md:ml-20  md:mr-12">
+      <Hero />
+      <NewReleases />
+    </main>
   );
 }
