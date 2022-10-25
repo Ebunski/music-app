@@ -14,7 +14,7 @@ export default function Slideshow({ title, children }) {
           clickable: true,
         }}
         grabCursor={true}
-        className="mySwiper h-screen"
+        className="mySwiper h-auto"
       >
         {children}
       </Swiper>

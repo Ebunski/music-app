@@ -7,6 +7,7 @@ export default function Home() {
     <main className="md:mt-20 md:ml-20  md:mr-12">
       <Hero />
       <NewReleases />
+      <YourArea />
     </main>
   );
 }
