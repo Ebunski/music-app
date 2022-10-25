@@ -16,6 +16,7 @@ export default function SlideItem({ image, title, artist }) {
     </SwiperSlide>
   );
 }
+SlideItem.displayName = "SwiperSlide";
 
 SlideItem.propTypes = {
   image: PropTypes.string.isRequired,
