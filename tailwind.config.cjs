@@ -7,9 +7,10 @@ module.exports = {
 				'primary-bg': '#1e1e1e',
 				'secondary-bg': '#1A1E1F',
 				'secondary-color': 'rgb(255,255,255,0.25)',
-				'darkgray':'rgba(255, 255, 255, 0.5)',
+				'darkgray': 'rgba(255, 255, 255, 0.5)',
 				'bright-yellow': '#FACD66',
 				'average-blue': '#609EAF',
+				'gray-text': '#EFEEE0',
 			},
 		},
 		fontFamily: {

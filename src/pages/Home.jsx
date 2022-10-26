@@ -4,7 +4,7 @@ import YourArea from "../components/YourArea";
 
 export default function Home() {
   return (
-    <main className="md:mt-20 md:ml-20  md:mr-12">
+    <main className={`md:pt-20 md:pl-20 md:pr-12`}>
       <Hero />
       <NewReleases />
       <YourArea />
