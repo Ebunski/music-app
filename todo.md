@@ -1,2 +1,2 @@
 -- Later --
-- Implementing unique background of player section
+- Do that sharedLayout and Router thing.
