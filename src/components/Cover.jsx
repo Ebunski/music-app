@@ -4,8 +4,8 @@ import useGlobalContext from '../contexts/appContext';
 export default function Cover() {
 	const { isDesktop } = useGlobalContext();
 	return (
-		<div className="flex md:flex-row flex-col items-center md:items-stretch gap-12 text-gray-text text-[0.8rem]">
-			<img src="./img/Lead-image.png" className="rounded-2xl" />
+		<div className="flex md:flex-row flex-col items-center md:items-stretch gap-12 ">
+			<img src="./img/Lead-image.png" className="w-full md:w-auto rounded-2xl" />
 			<div className="flex flex-col justify-end max-w-[35rem] pb-4">
 				<div className="font-semibold text-[2rem] text-[#A4C7C6]">
 					Tomorrow's Tunes
