@@ -39,24 +39,24 @@ export default function Songs() {
   return (
 		<div className="py-12">
 			{songs.map((song, i) => (
-				<div className="bg-[rgb(51,55,59,0.37)] rounded-xl p-2 mb-4 grid items-center justify-stretch grid-cols-[repeat(4,max-content)] md:grid-areas-song-desktop grid-areas-song-mobile md:grid-cols-[repeat(7,max-content)]">
-					<img src={song.img} alt="" className="grid-in-cover pr-2 md:pr-0" />
+				<div className="bg-[rgb(51,55,59,0.37)] rounded-xl p-2 mb-4 grid items-center justify-stretch md:justify-between md:grid-areas-song-desktop grid-areas-song-mobile md:grid-cols-[3rem_repeat(2,2.5rem)_repeat(3,6rem)_repeat(2,6rem)_12rem_2rem] grid-cols-[repeat(4,1fr)] ">
+					<img src={song.img} alt="" className="grid-in-cvr pr-2 md:pr-0" />
 					{isDesktop && (
-						<div className="w-[7rem] pl-4 grid-in-heart">
+						<div className="w-[7rem] pl-4 grid-in-hrt">
 							<img src="./img/Heart-another.png" />
 						</div>
 					)}
-					<div className="w-[14rem] grid-in-name ">{song.name}</div>
-					<div className="md:w-[20rem] text-start md:text-center text-[0.6rem] md:text-[0.8rem] grid-in-type ">
+					<div className="w-[14rem] grid-in-nme ">{song.name}</div>
+					<div className="md:w-[20rem] text-start md:text-center text-[0.6rem] md:text-[0.8rem] grid-in-typ ">
 						{song.type}
 					</div>
-					<div className="md:w-[20rem] text-center grid-in-duration">
+					<div className="md:w-[20rem] text-end md:text-center grid-in-drn">
 						{song.duration}
 					</div>
 					<img
 						src="./img/more-vertical.png"
 						alt=""
-						className="grid-in-select md:text-end"
+						className="grid-in-slt justify-self-end md:justify-self-start text-end md:pr-2"
 					/>
 				</div>
 			))}

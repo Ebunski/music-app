@@ -13,8 +13,9 @@ module.exports = {
 				'gray-text': '#EFEEE0',
 			},
 			gridTemplateAreas: {
-				'song-desktop': ['cover heart name type duration select'],
-				'song-mobile': ['cover name select', 'cover type duration'],
+				'song-desktop': 
+				['cvr hrt hrt nme nme nme typ typ drn slt'],
+				'song-mobile': ['cvr nme slt slt', 'cvr typ drn drn'],
 			},
 		},
 		fontFamily: {
