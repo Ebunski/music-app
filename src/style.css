@@ -9,5 +9,4 @@ body {
 }
 input:focus {
 	@apply outline-none;
-	
 }

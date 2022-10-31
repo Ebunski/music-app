@@ -1,11 +1,12 @@
-import React, { useState } from "react";
-import { Menu, X } from "react-feather";
-import useGlobalContext from "../../contexts/appContext";
+import React, { useState } from 'react';
+import { Menu, X } from 'react-feather';
+import { Link } from 'react-router-dom';
+import useGlobalContext from '../../contexts/appContext';
 
 export default function Nav() {
-  const { isDesktop } = useGlobalContext();
-  const [navOpen, setNavOpen] = useState(false);
-  return (
+	const { isDesktop } = useGlobalContext();
+	const [navOpen, setNavOpen] = useState(false);
+	return (
 		<nav className="fixed inset-x-0 top-0 z-20">
 			<div
 				className={`top-nav- flex items-center gap-8 ${
@@ -38,14 +39,26 @@ export default function Nav() {
 			{isDesktop ? (
 				<div className="absolute top-[100%] left-0 side-nav- flex flex-col gap-10 items-center w-20">
 					<div className="flex flex-col gap-4 bg-[#1A1E1F] py-4 px-2 rounded-[2rem] items-center">
-						<img src="./img/Home.png" alt="Home" />
-						<img src="./img/playlist (1).png" alt="playlist" />
-						<img src="./img/videos.png" alt="videos" />
-						<img src="./img/radio.png" alt="radio" />
+						<Link to="/">
+							<img src="./img/Home.png" alt="Home" />
+						</Link>
+						<Link to="/tomorrowstunes">
+							<img src="./img/playlist (1).png" alt="playlist" />
+						</Link>
+						<Link to="/collections">
+							<img src="./img/videos.png" alt="videos" />
+						</Link>
+						<Link>
+							<img src="./img/radio.png" alt="radio" />
+						</Link>
 					</div>
 					<div className="flex flex-col gap-4 bg-[#1A1E1F] py-4 px-2 rounded-[2rem] items-center">
-						<img src="./img/profile.png" alt="profile" />
-						<img src="./img/Logout.png" alt="Logout" />
+						<Link>
+							<img src="./img/profile.png" alt="profile" />
+						</Link>
+						<Link>
+							<img src="./img/Logout.png" alt="Logout" />
+						</Link>
 					</div>
 				</div>
 			) : (
